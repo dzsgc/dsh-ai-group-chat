@@ -1,0 +1,30 @@
+{
+  "name": "dsh-ai-group-chat",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AI 群聊：把多个模型拉进一个群，让它们自己聊天，也可以派活并选举主代理",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}
