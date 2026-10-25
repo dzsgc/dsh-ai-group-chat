@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "AI Group Chat",
+    "description": "Put several models in one group chat: they keep talking on their own, and you can hand them work and decide who leads. Each group carries its own round and token limits."
+  }
+}
